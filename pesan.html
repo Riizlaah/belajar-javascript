@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.js"></script>
+  <title>Pesan Menu</title>
+</head>
+<body>
+  <nav>
+    <a class="nav-header" href="index.html">Resto Omke</a>
+    <div>
+      <a href="pesan.html" class="nav-item">Pesan Menu</a>
+      <a href="admin.html" class="nav-item">Login Admin</a>
+    </div>
+  </nav>
+  <div class="container">
+    <details>
+      <summary>Menu Yang Tersedia</summary>
+      <div class="cols-3" id="menus"></div>
+    </details><hr>
+    <div class="form">
+      <h1>Pesanan</h1>
+      <hr>
+      <p id="info"></p>
+      <input type="text" id="name" placeholder="Masukkan Nama..." required>
+      <input type="text" id="buy" placeholder="Masukkan Jumlah Uang..." required>
+      <button class="btn" disabled id="buy-btn">Pesan</button>
+    </div>
+  </div>
+  <script src="pesan.js"></script>
+</body>
+</html>

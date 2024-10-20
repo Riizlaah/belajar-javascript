@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.js"></script>
+  <title>Admin Page</title>
+</head>
+<body>
+  <nav>
+    <a class="nav-header" href="index.html">Resto Omke</a>
+    <div>
+      <a href="pesan.html" class="nav-item">Pesan Menu</a>
+      <a href="admin.html" class="nav-item">Login Admin</a>
+    </div>
+  </nav>
+  <div class="container">
+    <form class="form" id="login" hidden>
+      <h1>Login Admin</h1>
+      <input type="password" id="password" placeholder="Password...">
+      <button class="btn">Login</button>
+    </form>
+  </div>
+  <div id="adminmenu" hidden>
+    <button class="btn" id="logout">Logout</button>
+    <details>
+      <summary>Tambah Menu</summary>
+      <div class="form" id="addmenu">
+        <input type="text" placeholder="Nama Menu..." id="name">
+        <textarea placeholder="Deskripsi Menu..." id="desc" rows="5" cols="23"></textarea>
+        <input type="text" placeholder="Harga Menu..." id="price">
+        <button class="btn">Tambah Menu</button>
+      </div>
+    </details>
+    <table border="1" cellpadding="5" cellspacing="0" id="table">
+      <tr>
+        <th>No.</th>
+        <th>Aksi</th>
+        <th>Nama Menu</th>
+        <th>Deskripsi Menu</th>
+        <th>Harga Menu</th>
+      </tr>
+    </table>
+    <div class="vignette" hidden></div>
+    <dialog>
+      <div class="form" id="editmenu">
+        <input type="text" placeholder="Nama Menu..." id="name1">
+        <textarea placeholder="Deskripsi Menu..." id="desc1" rows="5" cols="23"></textarea>
+        <input type="text" placeholder="Harga Menu..." id="price1">
+        <button class="btn">Batal</button><button class="btn-warn">Ubah Menu</button>
+      </div>
+    </dialog>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
